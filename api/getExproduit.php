@@ -1,5 +1,5 @@
 <?php
-$con = new PDO ("mysql:host=localhost;dbname=extincteur","root","");
+include("db.php");
 $sql = "SELECT * FROM exproduit";
 $exproduitQuery = $con->query($sql);
 $getExproduit = $exproduitQuery->fetchAll(PDO::FETCH_ASSOC);
